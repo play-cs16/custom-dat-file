@@ -2,7 +2,7 @@
 
 Автоматическая сборка кастомного файла custom.dat для Xray
 
-**Актуальная версия собранного файла:** [custom.dat](https://github.com/xxphantom/custom-dat-file/releases/latest/download/custom.dat)
+**Актуальная версия собранного файла:** [custom.dat](http://github.com/play-cs16/custom-dat-file/releases/latest/download/custom.dat)
 
 ## Структура проекта
 
@@ -44,7 +44,7 @@ make build-docker
 2. Создается новый релиз с версией вида `v2025.01.08-123`
 3. Файл `custom.dat` публикуется в релизе
 
-Все релизы доступны на странице [Releases](https://github.com/xxphantom/custom-dat-file/releases).
+Все релизы доступны на странице [Releases](http://github.com/play-cs16/custom-dat-file/releases/).
 
 ## Структура данных
 
@@ -212,8 +212,7 @@ googleadservices.com @ads
 
 ```bash
 # Скачать ваш кастомный DAT
-wget -O /usr/local/share/xray/my-custom.dat \
-  https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest/download/custom.dat
+curl -L -o /opt/etc/xray/dat/custom.dat http://github.com/play-cs16/custom-dat-file/releases/latest/download/custom.dat
 
 # Использовать в Xray конфиге
 "domain": ["geosite:blocked", "geosite:my-custom-list"]
